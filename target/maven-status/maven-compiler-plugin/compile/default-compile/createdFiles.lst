@@ -1,0 +1,7 @@
+com\ros\processing\dto\ProcessingDTO.class
+com\ros\processing\entity\RosProcessingEntity.class
+com\ros\processing\service\RabbitListenerService.class
+com\ros\processing\ProcessingApplication.class
+com\ros\processing\config\RabbitMQConfig.class
+com\ros\processing\service\RepositoryService.class
+com\ros\processing\repository\MyRepository.class
