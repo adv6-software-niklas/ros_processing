@@ -107,7 +107,7 @@ jobs:
   
   Deploy_Azure:
     runs-on: ubuntu-latest
-    needs: Staging
+    needs: [Staging, SonarCloud]
     steps:
       - name: Get artifact
         uses: actions/download-artifact@v3
