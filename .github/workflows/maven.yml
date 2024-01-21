@@ -63,9 +63,9 @@ jobs:
         run: sleep 5s
       - name: Check if Docker is running PostgreSQL
         run: docker ps
-      - name: Modify applications.properties
+      - name: Modify application.properties
         run: |
-          sed -i 's|jdbc:postgresql://ros-config-service:5432/mysecretuser|jdbc:postgresql://localhost:5432/mysecretuser|' build/src/main/resources/application.properties
+          sed -i 's|jdbc:postgresql://172.69.0.15:5432/mysecretuser|jdbc:postgresql://localhost:5432/mysecretuser|' build/src/main/resources/application.properties
       - name: Sonar scan
         env:
           GITHUB_TOKEN: ${{ secrets.TOKEN_GITHUB }}
